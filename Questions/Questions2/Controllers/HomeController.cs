@@ -74,7 +74,7 @@ namespace Questions2.Controllers
         public IActionResult GetBridgeTable()
         {
             List<BridgeTable> list = DBContext.BridgeTable.ToList();
-            return Json(new { code = 0, message = "添加成功",data=list });
+            return Json(new { code = 0, message = "查找成功",data=list });
         }
 
         /// <summary>

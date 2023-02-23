@@ -13,11 +13,6 @@ namespace Questions2.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<BridgeTable>(entity =>
-            {
-                entity.HasKey(e => e.Id);
-            });
         }
     }
 }
